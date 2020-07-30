@@ -6,14 +6,13 @@
   <title>PINK</title>
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
-    <a class="page-header--logo">
+    <a class="page-header__logo">
       <img src="https://via.placeholder.com/74x23" alt="Логотип" width="74" height="23">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <aria-label class="visually-hidden">Открыть меню</aria-label>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
@@ -40,19 +39,19 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="header__wrapper">
+    <h1 class="visually-hidden">Главная страница PINK</h1>
+    <section class="page-main__wrapper">
       <div class="page-main__title">
-        <h1 class="visually-hidden">Главная страница PINK</h1>
         <h2>Взгляните на жизнь иначе</h2>
       </div>
       <div>
         <a class="page-main__button" href="https://play.google.com/store/apps?hl=en_US">Скачать приложение</a>
-        <ul class="page-main__list">
-          <li class="page-main__item social">
+        <ul class="page-main__list ">
+          <li class="page-main__item page-main__item--apple operating-system">
           </li>
-          <li class="page-main__item social">
+          <li class="page-main__item page-main__item--android operating-system">
           </li>
-          <li class="page-main__item social">
+          <li class="page-main__item page-main__item--windows operating-system">
           </li>
         </ul>
         <p class="page-main__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -97,26 +96,26 @@
         <img src="https://via.placeholder.com/74x23" alt="Логотип" width="74" height="23">
       </a>
     </div>
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="#">
+    <ul class="page-footer__list">
+      <li class="page-footer__item">
+        <a class="page-footer__link social" href="#">
           <img src="https://via.placeholder.com/48x48" alt="Twitter" width="48" height="48">
         </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">
+      <li class="page-footer__item">
+        <a class="page-footer__link social" href="#">
           <img src="https://via.placeholder.com/48x48" alt="Facebook" width="48" height="48">
         </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="#">
+      <li class="page-footer__item">
+        <a class="page-footer__link social" href="#">
           <img src="https://via.placeholder.com/48x48" alt="Youtube" width="48" height="48">
         </a>
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
-      <b class="copiright__text">Разработано</b>
-      <a class="copiright__link" href="#">
+      <b class="page-footer__text">Разработано</b>
+      <a class="page-footer__link" href="#">
         <img src="https://via.placeholder.com/48x48" alt="HTML Academy" width="27" height="34">
       </a>
     </div>
