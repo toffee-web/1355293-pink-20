@@ -111,12 +111,18 @@
         <img class="page-main__img" src="https://via.placeholder.com/280x374" alt="Фотография для редактирования"
           width="280" height="374">
         <form class="page-main__form" action="https://echo.htmlacademy.ru" method="POST">
-          <label class="page-main__label" for="image"><input id="image" type="radio"><img
-              src="https://via.placeholder.com/44x44" alt="Обрезать" width="44" height="44"></label>
-          <label class="page-main__label" for="image1"><input id="image1" type="radio"><img
-              src="https://via.placeholder.com/48x43" alt="Заливка" width="48" height="43"></label>
-          <label class="page-main__label" for="image2"><input id="image2" type="radio"><img
-              src="https://via.placeholder.com/32x32" alt="Контраст" width="32" height="32"></label>
+          <label class="page-main__label">
+            <input type="radio" name="image" value="crop">
+            <img src="https://via.placeholder.com/44x44" alt="Обрезать" width="44" height="44">
+          </label>
+          <label class="page-main__label">
+            <input type="radio" name="image" value="fill">
+            <img src="https://via.placeholder.com/48x43" alt="Заливка" width="48" height="43">
+          </label>
+          <label class="page-main__label">
+            <input type="radio" name="image" value="contrast">
+            <img src="https://via.placeholder.com/32x32" alt="Контраст" width="32" height="32">
+          </label>
           <input class="page-main__range" type="range">
           <button class="page-main__button page-main__button--post" type="submit">Запосить</button>
           <button class="page-main__button page-main__button--cancel" type="reset">Отмена</button>
