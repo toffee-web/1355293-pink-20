@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>PINK</title>
+  <title>Конкурс</title>
 </head>
 
 <body class="page-body">
@@ -42,6 +42,65 @@
     <div class="page-main__title">
       <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
+    <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу
+      бонусную карту!</p>
+    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="form__fieldset">
+        <label class="form__label" for="surname">Фамилия
+          <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+        </label>
+        <label class="form__label" for="name">Имя
+          <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя имя*" required>
+        </label>
+        <label class="form__label" for="middleName">Отчество
+          <input class="form__input" type="text" name="middleName" id="middleName" placeholder="Ну и отчество тоже">
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset-checkbox">
+        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <input class="fieldset-checkbox__input" type="checkbox" id="achievements" name="achievements"
+          value="Сделал селфи с акулой" checked>
+        <label class="fieldset-checkbox__label" for="achievements">Сделал селфи с акулой</label>
+        <input class="fieldset-checkbox__input" type="checkbox" id="achievements1" name="achievements"
+          value="Обгорел на пляже" checked>
+        <label class="fieldset-checkbox__label" for="achievements1">Обгорел на пляже</label>
+        <input class="fieldset-checkbox__input" type="checkbox" id="achievements2" name="achievements"
+          value="Видел Чака Норриса">
+        <label class="fieldset-checkbox__label" for="achievements2">Видел Чака Норриса</label>
+        <input class="fieldset-checkbox__input" type="checkbox" id="achievements3" name="achievements"
+          value="Накупил сувениров">
+        <label class="fieldset-checkbox__label" for="achievements3">Накупил сувениров</label>
+        <input class="fieldset-checkbox__input" type="checkbox" id="achievements4" name="achievements"
+          value="Удержал башню" checked>
+        <label class="fieldset-checkbox__label" for="achievements4">Удержал башню</label>
+        <input class="fieldset-checkbox__input" type="checkbox" id="achievements5" name="achievements"
+          value="Разгромил отель">
+        <label class="fieldset-checkbox__label" for="achievements5">Разгромил отель</label>
+      </fieldset>
+      <fieldset class="form__fieldset">
+        <label class="form__label" for="phone">Номер телефона
+          <input class="form__input" type="tel" name="tel" id="phone" placeholder="Номер, пожалуйста">
+        </label>
+        <label class="form__label" for="email">Адрес почты
+          <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту*" required>
+        </label>
+      </fieldset>
+      <fieldset class="form__fieldset fieldset-radio">
+        <legend class="form__legend">С каким приложением путешествовали?</legend>
+        <input class="fieldset-radio__input" type="radio" id="application" name="application" value="Pink для iOS"
+          checked>
+        <label class="fieldset-radio__label" for="application">Pink для iOS</label>
+        <input class="fieldset-radio__input" type="radio" id="application1" name="application" value="Pink на Android">
+        <label class="fieldset-radio__label" for="application1">Pink на Android</label>
+        <input class="fieldset-radio__input" type="radio" id="application2" name="application" value="Windows Phone">
+        <label class="fieldset-radio__label" for="application2">Windows Phone</label>
+      </fieldset>
+      <label class="form__label" for="emotion">Опишите свои эмоции</label>
+      <textarea class="form__textarea" name="emotion" id="emotion" cols="30" rows="10"
+        placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <p class="form__btn"><input type="submit" value="Отправить форму"></p>
+    </form>
+    <p class="page-main__desc">* - обязательные поля</p>
   </main>
   <footer class="page-footer">
     <div class="page-footer__logo">
