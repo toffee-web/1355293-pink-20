@@ -3,14 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>PINK</title>
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/74x23" alt="Логотип" width="74" height="23">
-    </a>
+    <div>
+      <a class="page-header__logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="74" height="23">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
       </button>
@@ -42,11 +45,11 @@
     <h1 class="visually-hidden">Главная страница PINK</h1>
     <section class="page-main__wrapper">
       <div class="page-main__title">
-        <h2>Взгляните на жизнь иначе</h2>
+        <h2>Взгляните на жизнь иначе!</h2>
       </div>
-      <div>
+      <div class="page-main__os">
         <a class="page-main__button" href="https://play.google.com/store/apps?hl=en_US">Скачать приложение</a>
-        <ul class="page-main__list ">
+        <ul class="page-main__list">
           <li class="page-main__item page-main__item--apple operating-system">
           </li>
           <li class="page-main__item page-main__item--android operating-system">
@@ -85,11 +88,26 @@
           </li>
         </ul>
       </div>
+      <div class="advantages__image"></div>
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__wrapper">
         <ul class="reviews__list">
+          <li class="reviews__item">
+            <blockquote>
+              <cite class="reviews__name">Николай Петров</cite>
+              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            </blockquote>
+          </li>
+          <li class="reviews__item">
+            <blockquote>
+              <cite class="reviews__name">Николай Петров</cite>
+              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+            </blockquote>
+          </li>
           <li class="reviews__item">
             <blockquote>
               <cite class="reviews__name">Николай Петров</cite>
@@ -112,7 +130,7 @@
       </div>
     </section>
     <section class="price">
-      <table class="price-table" border="1">
+      <table class="price-table">
         <thead>
           <tr class="price-table__header">
             <th class="price-table__heading">База <span class="price-table__heading-price">1,99 USD</span></th>
@@ -123,35 +141,35 @@
         <tbody>
           <tr class="price-table__row">
             <td class="price-table__cell">Розовый фильтр
-              <img class="price-table__image" src="https://via.placeholder.com/31x21" alt="Да" width="31" height="21">
+              <img class="price-table__image" src="img/icon-yes.svg" alt="Да" width="31" height="21">
             </td>
             <td class="price-table__cell">Розовый фильтр
-              <img class="price-table__image" src="https://via.placeholder.com/31x21" alt="Да" width="31" height="21">
+              <img class="price-table__image" src="img/icon-yes.svg" alt="Да" width="31" height="21">
             </td>
             <td class="price-table__cell">Розовый фильтр
-              <img class="price-table__image" src="https://via.placeholder.com/31x21" alt="Да" width="31" height="21">
+              <img class="price-table__image" src="img/icon-yes.svg" alt="Да" width="31" height="21">
             </td>
           </tr>
           <tr class="price-table__row">
             <td class="price-table__cell">Смайлики
-              <img class="price-table__image" src="https://via.placeholder.com/27x27" alt="Нет" width="27" height="27">
+              <img class="price-table__image" src="img/icon-no.svg" alt="Нет" width="27" height="27">
             </td>
             <td class="price-table__cell">Смайлики
-              <img class="price-table__image" src="https://via.placeholder.com/31x21" alt="Да" width="31" height="21">
+              <img class="price-table__image" src="img/icon-yes.svg" alt="Да" width="31" height="21">
             </td>
             <td class="price-table__cell">Смайлики
-              <img class="price-table__image" src="https://via.placeholder.com/31x21" alt="Да" width="31" height="21">
+              <img class="price-table__image" src="img/icon-yes.svg" alt="Да" width="31" height="21">
             </td>
           </tr>
           <tr class="price-table__row">
             <td class="price-table__cell">Комментарии
-              <img class="price-table__image" src="https://via.placeholder.com/27x27" alt="Нет" width="27" height="27">
+              <img class="price-table__image" src="img/icon-no.svg" alt="Нет" width="27" height="27">
             </td>
             <td class="price-table__cell">Комментарии
-              <img class="price-table__image" src="https://via.placeholder.com/27x27" alt="Нет" width="27" height="27">
+              <img class="price-table__image" src="img/icon-no.svg" alt="Нет" width="27" height="27">
             </td>
             <td class="price-table__cell">Комментарии
-              <img class="price-table__image" src="https://via.placeholder.com/31x21" alt="Да" width="31" height="21">
+              <img class="price-table__image" src="img/icon-yes.svg" alt="Да" width="31" height="21">
             </td>
           </tr>
         </tbody>
@@ -191,33 +209,33 @@
   <footer class="page-footer">
     <div class="page-footer__logo">
       <a href="#">
-        <img src="https://via.placeholder.com/59x40" alt="Очки" width="59" height="40">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип" width="145" height="40">
       </a>
-      <a href="#">
+      <!--a href="#">
         <img src="https://via.placeholder.com/74x23" alt="Логотип" width="74" height="23">
-      </a>
+      </a-->
     </div>
     <ul class="page-footer__list">
       <li class="page-footer__item">
         <a class="page-footer__link social" href="#">
-          <img src="https://via.placeholder.com/48x48" alt="Twitter" width="48" height="48">
+          <img src="img/icon-twitter.svg" alt="Twitter" width="18" height="14">
         </a>
       </li>
       <li class="page-footer__item">
         <a class="page-footer__link social" href="#">
-          <img src="https://via.placeholder.com/48x48" alt="Facebook" width="48" height="48">
+          <img src="img/icon-facebook.svg" alt="Facebook" width="9" height="18">
         </a>
       </li>
       <li class="page-footer__item">
         <a class="page-footer__link social" href="#">
-          <img src="https://via.placeholder.com/48x48" alt="Youtube" width="48" height="48">
+          <img src="img/icon-youtube.svg" alt="Youtube" width="15" height="13">
         </a>
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
       <b class="page-footer__text">Разработано</b>
       <a class="page-footer__link" href="#">
-        <img src="https://via.placeholder.com/48x48" alt="HTML Academy" width="27" height="34">
+        <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
       </a>
     </div>
   </footer>
