@@ -2,12 +2,12 @@ $black: #000000;
 $dark-blue: #283645;
 $white: #ffffff;
 
-.advantages__list{
-  background: #F2F2F2;
+.advantages__list {
+  background: #f2f2f2;
 }
 
-.advantages__heading{
-  font-family: "Open Sans", Arial, sans-serif;
+.advantages__heading {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -16,12 +16,12 @@ $white: #ffffff;
   color: $dark-blue;
 }
 
-.advantages__item{
+.advantages__item {
   list-style-type: none;
 }
 
-.advantages__title{
-  font-family: "Open Sans", Arial, sans-serif;
+.advantages__title {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -30,8 +30,8 @@ $white: #ffffff;
   color: $black;
 }
 
-.advantages__discription{
-  font-family: "Open Sans", Arial, sans-serif;
+.advantages__discription {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -40,8 +40,8 @@ $white: #ffffff;
   color: $dark-blue;
 }
 
-.advantages__image{
-  background-image: url(../img/iphone-screen-mobile@1x.png);
+.advantages__image {
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   width: 157px;
   height: 320px;
 }

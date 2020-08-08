@@ -2,13 +2,13 @@ $black: #000000;
 $dark-blue: #283645;
 $white: #ffffff;
 
-.reviews__item{
+.reviews__item {
   list-style-type: none;
   text-align: center;
 }
 
-.reviews__name{
-  font-family: "Open Sans", Arial, sans-serif;
+.reviews__name {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -16,12 +16,11 @@ $white: #ffffff;
   color: $black;
 }
 
-.reviews__text{
-  font-family: "Open Sans", Arial, sans-serif;
+.reviews__text {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
 }
-
