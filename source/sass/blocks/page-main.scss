@@ -1,0 +1,122 @@
+.page-main__title {
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center;
+  height: 400px;
+  padding-top: 29px;
+
+  h2 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.page-main__title-background {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  height: 250px;
+  background-position: center top;
+
+  h1 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.page-main__os {
+  background-color: #1d2631;
+}
+
+.page-main__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+  border: 3px solid $white;
+  border-radius: 29px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right: 59px;
+  padding-left: 58px;
+
+  &--post {
+    color: $pink;
+    border: 3px solid $pink;
+    border-radius: 30px;
+    padding-right: 90px;
+    padding-left: 91px;
+    margin-bottom: 12px;
+  }
+
+  &--cancel {
+    color: $dark-blue;
+    opacity: 0.1;
+    border: 3px solid $dark-blue;
+    border-radius: 30px;
+    padding-right: 103px;
+    padding-left: 104px;
+  }
+}
+
+.page-main__item {
+  background-repeat: no-repeat;
+  &--apple {
+    background-image: url("../img/logo-apple.svg");
+  }
+
+  &--android {
+    background-image: url("../img/logo-android.svg");
+  }
+
+  &--windows {
+    background-image: url("../img/logo-microsoft.svg");
+  }
+}
+
+.page-main__text-os {
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+}
+
+.page-main__text {
+  text-align: center;
+}
+
+.photo__author-name {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.photo__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo__text-like {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $pink;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+}
+
+.photo__list {
+  list-style: none;
+}
+
+.page-main__radio {
+  display: none;
+}

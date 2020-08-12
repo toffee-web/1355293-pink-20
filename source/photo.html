@@ -9,9 +9,11 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="74" height="23">
-    </a>
+    <div class="page-header__block">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="74" height="23">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
       </button>
@@ -41,16 +43,15 @@
   </header>
   <main class="page-main">
     <section class="page-main__wrapper">
-      <div class="page-main__title">
+      <div class="page-main__title-background">
         <h1>Фотографии пользователей</h1>
       </div>
       <div class="page-main__photo photo">
-        <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видете, как не хватает ваших?
+        <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видете, как не хватает ваших?
         </p>
         <ul class="photo__list">
           <li class="photo__item">
-            <img class="photo__author-image" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320"
-              height="137">
+            <img class="photo__author-image" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
             <p class="photo__author-name">Анна</p>
             <span class="photo__time">(5 минут назад)</span>
             <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
@@ -58,8 +59,7 @@
             <p class="photo__text-like">Нравится: 215</p>
           </li>
           <li class="photo__item">
-            <img class="photo__author-image" src="img/photo-car-mobile@1x.jpg" alt="Машина" width="280"
-              height="180">
+            <img class="photo__author-image" src="img/photo-car-mobile@1x.jpg" alt="Машина" width="280" height="180">
             <p class="photo__author-name">Левон</p>
             <span class="photo__time">(5 часов назад)</span>
             <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -74,8 +74,7 @@
             <p class="photo__text-like">Нравится: 666</p>
           </li>
           <li class="photo__item">
-            <img class="photo__author-image" src="img/photo-window-mobile@1x.jpg" alt="Окно" width="280"
-              height="180">
+            <img class="photo__author-image" src="img/photo-window-mobile@1x.jpg" alt="Окно" width="280" height="180">
             <p class="photo__author-name">Борис</p>
             <span class="photo__time">(20 часов назад)</span>
             <p class="photo__text">Здесь могла быть ваша цитата о вечном.</p>
@@ -90,38 +89,36 @@
             <p class="photo__text-like">Нравится: 4</p>
           </li>
           <li class="photo__item">
-            <img class="photo__author-image" src="img/photo-pov-mobile@1x.jpg" alt="Горы" width="280"
-              height="180">
+            <img class="photo__author-image" src="img/photo-pov-mobile@1x.jpg" alt="Горы" width="280" height="180">
             <p class="photo__author-name">Максим</p>
             <span class="photo__time">(40 часов назад)</span>
             <p class="photo__text">Где снег-то?</p>
             <p class="photo__text-like">Нравится: 150</p>
           </li>
           <li class="photo__item">
-            <img class="photo__author-image" src="img/photo-wing-mobile@1x.jpg" alt="Небо" width="280"
-              height="180">
+            <img class="photo__author-image" src="img/photo-wing-mobile@1x.jpg" alt="Небо" width="280" height="180">
             <p class="photo__author-name">Надежда</p>
             <span class="photo__time">(45 часов назад)</span>
             <p class="photo__text">Все GM и взаимные лайки!</p>
             <p class="photo__text-like">Нравится: 2590</p>
           </li>
         </ul>
-        <p class="page-main__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне</p>
+        <p class="page-main__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне</p>
       </div>
       <div class="page-main__section">
-        <img class="page-main__img" src="img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования"
-          width="280" height="374">
+        <img class="page-main__img" src="img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования" width="280"
+          height="374">
         <form class="page-main__form" action="https://echo.htmlacademy.ru" method="POST">
           <label class="page-main__label">
-            <input type="radio" name="image" value="crop">
+            <input class="page-main__radio" type="radio" name="image" value="crop">
             <img src="img/icon-editor-crop.svg" alt="Обрезать" width="44" height="44">
           </label>
           <label class="page-main__label">
-            <input type="radio" name="image" value="fill">
+            <input class="page-main__radio" type="radio" name="image" value="fill">
             <img src="img/icon-editor-fill.svg" alt="Заливка" width="48" height="43">
           </label>
           <label class="page-main__label">
-            <input type="radio" name="image" value="contrast">
+            <input class="page-main__radio" type="radio" name="image" value="contrast">
             <img src="img/icon-editor-contrast.svg" alt="Контраст" width="32" height="32">
           </label>
           <input class="page-main__range" type="range">
@@ -136,9 +133,6 @@
       <a href="#">
         <img src="img/logo-pink-blue-mobile.svg" alt="Логотип" width="145" height="40">
       </a>
-      <!--a href="#">
-        <img src="https://via.placeholder.com/74x23" alt="Логотип" width="74" height="23">
-      </a-->
     </div>
     <ul class="page-footer__list">
       <li class="page-footer__item">

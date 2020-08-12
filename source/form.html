@@ -9,9 +9,11 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="74" height="23">
-    </a>
+    <div class="page-header__block">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="74" height="23">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
       </button>
@@ -40,7 +42,7 @@
     </nav>
   </header>
   <main class="page-main">
-    <div class="page-main__title">
+    <div class="page-main__title-background">
       <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу
@@ -99,18 +101,15 @@
       <label class="form__label" for="emotion">Опишите свои эмоции</label>
       <textarea class="form__textarea" name="emotion" id="emotion" cols="30" rows="10"
         placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      <p class="form__btn"><input type="submit" value="Отправить форму"></p>
+      <p><input class="form__btn" type="submit" value="Отправить форму"></p>
     </form>
-    <p class="page-main__desc">* - обязательные поля</p>
+    <p class="page-main__desc"><span>*</span> - обязательные поля</p>
   </main>
   <footer class="page-footer">
     <div class="page-footer__logo">
       <a href="#">
         <img src="img/logo-pink-blue-mobile.svg" alt="Логотип" width="145" height="40">
       </a>
-      <!--a href="#">
-        <img src="https://via.placeholder.com/74x23" alt="Логотип" width="74" height="23">
-      </a-->
     </div>
     <ul class="page-footer__list">
       <li class="page-footer__item">

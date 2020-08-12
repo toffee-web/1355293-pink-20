@@ -1,31 +1,26 @@
 .contacts__title {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #283645;
+  color: $dark-blue;
 }
 
 .contacts__text {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  color: #283645;
+  color: $dark-blue;
 }
 
 .contacts__phone,
 .contacts__email,
 .contacts__address {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-  color: #d22856;
+  color: $pink;
 }
