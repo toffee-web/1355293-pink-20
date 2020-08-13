@@ -1,0 +1,29 @@
+.page-header {
+  .page-header__block {
+    background-color: $dark-blue;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+  }
+}
+
+.site-list__item {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  list-style-type: none;
+  background-color: $dark-blue;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+}

@@ -1,1 +1,12 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "../sass/blocks/visually-hidden.scss";
+@import "../sass/blocks/fonts.scss";
+@import "../sass/blocks/page-body.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/page-main.scss";
+@import "../sass/blocks/advantages.scss";
+@import "../sass/blocks/reviews.scss";
+@import "../sass/blocks/price.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/form.scss";
+@import "../sass/blocks/page-footer.scss";
