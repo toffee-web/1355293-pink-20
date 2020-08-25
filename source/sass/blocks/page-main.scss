@@ -1,9 +1,32 @@
-.page-main__title {
+.page-main__bg {
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: left bottom, left;
-  height: 350px;
-  padding-top: 29px;
+  background-position: center bottom, center;
+  height: 463px;
+  padding-top: 95px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom, center;
+    height: 729px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 853px;
+  }
+}
+
+.page-main__title {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   h2 {
     font-weight: 300;
@@ -15,24 +38,33 @@
     padding-right: 20px;
     padding-left: 20px;
 
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 48px;
+      width: 50%;
+      padding-top: 102px;
+      padding-right: 45px;
+      padding-left: 45px;
+      margin-left: 0;
+    }
+
     @media (min-width: $desktop-width) {
       font-size: 50px;
       line-height: 68px;
+      text-align: center;
+      width: 50%;
+      padding-top: 114px;
+      padding-right: 230px;
+      padding-left: 0;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right bottom, center;
-    height: 619px;
-  }
-
   @media (min-width: $desktop-width) {
-    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: right bottom, center;
-    height: 743px;
+    background-position: 40px 113px;
+    height: 853px;
+    margin: 0 auto;
   }
 }
 
@@ -40,6 +72,18 @@
   background-color: #1d2631;
   padding-top: 49px;
   padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    background: none;
+    margin-top: -370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    background: none;
+    margin-top: -470px;
+  }
 }
 
 .page-main__button {
@@ -51,10 +95,11 @@
   text-decoration: none;
   border: 3px solid $white;
   border-radius: 29px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-right: 39px;
-  padding-left: 38px;
+  padding-top: 12px;
+  display: block;
+  height: 55px;
+  width: 280px;
+  margin: 0 auto;
 
   &--post {
     color: $pink;
@@ -73,6 +118,10 @@
     padding-right: 103px;
     padding-left: 104px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .page-main__list {
@@ -80,7 +129,6 @@
   padding-top: 53px;
   padding-bottom: 28px;
   padding-left: 0;
-  /*margin: 0;*/
   width: 204px;
   display: flex;
   justify-content: space-between;
@@ -116,6 +164,11 @@
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
 
 .page-main__text {

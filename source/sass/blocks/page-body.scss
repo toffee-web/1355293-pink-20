@@ -4,9 +4,20 @@
   line-height: 30px;
   font-size: 14px;
   color: $dark-blue;
+  position: relative;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }

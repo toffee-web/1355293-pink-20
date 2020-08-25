@@ -1,6 +1,13 @@
 .contacts {
   padding-top: 50px;
   padding-bottom: 74px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .contacts__title {
@@ -11,6 +18,8 @@
   color: $dark-blue;
   padding-bottom: 45px;
   margin: 0;
+  padding-right: 29px;
+  padding-left: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -22,8 +31,8 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
-    padding-right: 250px;
-    padding-left: 250px;
+    padding-right: 150px;
+    padding-left: 150px;
   }
 }
 
