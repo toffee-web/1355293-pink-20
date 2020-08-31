@@ -7,11 +7,11 @@
   list-style-type: none;
   text-align: center;
   padding-top: 50px;
-}
 
-.reviews__item::before {
-  @media (min-width: $desktop-width) {
-    content: url("../img/icon-quotes.svg");
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: url("../img/icon-quotes.svg");
+    }
   }
 }
 
@@ -58,11 +58,11 @@
       right: 900px;
       top: 40px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column-reverse;
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 }
 
@@ -80,28 +80,4 @@
 .reviews__toggles {
   padding-top: 44px;
   padding-bottom: 60px;
-}
-
-.slider {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.slider__toggle {
-  display: inline-block;
-  vertical-align: middle;
-  box-sizing: content-box;
-  width: 6px;
-  height: 6px;
-  margin-right: 20px;
-  background-color: rgba($dark-blue, 0.3);
-  border-radius: 50%;
-  user-select: none;
-  border: none;
-
-  &--current {
-    background: $white;
-    border: 3px solid #283645;
-  }
 }

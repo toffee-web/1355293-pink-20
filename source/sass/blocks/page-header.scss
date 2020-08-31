@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $dark-blue;
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 100%;
   top: 0;
@@ -30,6 +30,7 @@
   @media (min-width: $tablet-width) {
     height: 110px;
     padding-top: 27px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,50 +41,4 @@
     grid-template-columns: 1fr 1fr;
     gap: 173px;
   }
-}
-
-.site-list {
-  display: none;
-}
-
-.site-list__item {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 32px;
-  list-style-type: none;
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-  a {
-    text-decoration: none;
-    color: $white;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: none;
-    padding-top: 21px;
-    padding-bottom: 49px;
-  }
-}
-
-.main-nav__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 620px;
-    margin: 0;
-  }
-}
-
-.main-nav__toggle {
-  display: none;
 }
