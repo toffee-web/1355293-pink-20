@@ -1,4 +1,4 @@
-.page-body {
+body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   line-height: 30px;
@@ -6,6 +6,7 @@
   color: $dark-blue;
   position: relative;
   min-width: 320px;
+  margin: 0;
 }
 
 img {
@@ -17,8 +18,4 @@ img {
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
 }
