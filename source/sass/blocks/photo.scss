@@ -1,0 +1,133 @@
+.photo__item-panorama {
+  position: absolute;
+  width: 100vw;
+  left: -20px;
+}
+
+.photo__author-name {
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0;
+  padding-left: 17px;
+}
+
+.photo__text {
+  margin: 0;
+  padding-left: 17px;
+  padding-bottom: 25px;
+}
+
+.photo__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo__text-like {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $pink;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 17px 5px;
+  margin: 0;
+  padding-left: 48px;
+  padding-bottom: 26px;
+}
+
+.photo__list {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.photo__item {
+  margin-bottom: 20px;
+}
+
+.photo__item:last-child {
+  margin-bottom: 49px;
+}
+
+.photo__item--bg {
+  background-color: $light-grey;
+}
+
+.photo__panorama-image {
+  width: 100vw;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
+.photo__panorama {
+  position: relative;
+}
+
+.photo__subtitle {
+  width: 140px;
+  height: 36px;
+  background-color: $pink;
+  padding-top: 5px;
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 0;
+
+  p {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 12px;
+    line-height: 24px;
+    color: $white;
+    font-weight: bold;
+    text-align: center;
+  }
+}

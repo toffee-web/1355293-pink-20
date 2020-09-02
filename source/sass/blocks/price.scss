@@ -1,5 +1,34 @@
 .price {
   background-color: $light-grey;
+  padding-top: 81px;
+  padding-bottom: 49px;
+  position: relative;
+  overflow: hidden;
+  height: 506px;
+}
+
+.price-table {
+  padding-bottom: 45px;
+  border-spacing: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -590px;
+  width: 100vw;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.price-table__heading:nth-child(3) {
+  border-right: 2px solid $white;
+  border-left: 2px solid $white;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .price-table__heading {
@@ -10,6 +39,25 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
+  padding-top: 19px;
+  padding-right: 100px;
+  padding-bottom: 35px;
+  padding-left: 101px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+    padding-left: 39px;
+    padding-right: 38px;
+  }
+}
+
+.price-table__heading-name {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  margin: 0;
+  font-weight: bold;
 }
 
 .price-table__heading-price {
@@ -18,10 +66,72 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
+  margin: 0 auto;
+  width: 75px;
+}
+
+.price-table__heading-hit {
+  text-align: center;
+  font-weight: normal;
+  color: $white;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .price-table__cell {
   text-transform: uppercase;
-  background: #ffffff;
+  background: $white;
   border: 2px solid #e5e5e5;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-bottom: 17px;
+    padding-right: 24px;
+    position: relative;
+  }
+}
+
+.price-table--hidden {
+  @media (min-width: $tablet-width) {
+    font-size: 0;
+  }
+}
+
+.price-table__image-yes {
+  fill: $light-green;
+  width: 31px;
+  height: 21px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.price-table__image-no {
+  fill: $red;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.price__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

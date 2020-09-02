@@ -1,0 +1,28 @@
+.site-list {
+  display: none;
+}
+
+.site-list__item {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  list-style-type: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+    padding-top: 21px;
+    padding-bottom: 49px;
+  }
+}
