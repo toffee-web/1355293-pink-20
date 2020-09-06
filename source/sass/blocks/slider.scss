@@ -18,9 +18,11 @@
   border-radius: 3px;
   user-select: none;
   border: none;
+  padding: 0;
 
   &--current {
     background: $white;
     border: 3px solid #283645;
+    border-radius: 50%;
   }
 }

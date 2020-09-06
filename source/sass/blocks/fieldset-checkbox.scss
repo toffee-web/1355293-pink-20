@@ -1,3 +1,10 @@
+.fieldset-radio {
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .fieldset-checkbox__label,
 .fieldset-radio__label {
   font-size: 18px;
@@ -43,4 +50,19 @@
   fill: $pink;
   top: 10px;
   left: 9px;
+}
+
+.fieldset-checkbox__input + label:hover::before {
+  border: 2px solid #283645;
+}
+
+.fieldset-checkbox__input + label:active::before {
+  border: 2px solid #d22856;
+}
+
+.fieldset-checkbox .form__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
