@@ -18,6 +18,7 @@
 .page-footer__text {
   line-height: 18px;
   font-weight: normal;
+  margin-right: 16px;
 }
 
 .page-footer__list {
@@ -41,12 +42,32 @@
   height: 48px;
   border: 3px solid  rgba(40, 54, 69, 0.1);
   border-radius: 50px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active {
+    border-color: rgba(40, 54, 69, 0.1);
+  }
 }
 
 .page-footer__link {
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
+    width: 48px;
+    height: 48px;
+    line-height: 49px;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;*/
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social {
@@ -54,14 +75,17 @@
 
   &--twitter {
     height: 14px;
+    margin: 12px 13px;
   }
 
   &--facebook {
     height: 18px;
+    margin: 12px 16px;
   }
 
   &--youtube {
     height: 13px;
+    margin: 14px 15px;
   }
 }
 
@@ -70,4 +94,12 @@
   width: 27px;
   height: 34px;
   vertical-align: middle;
+
+  &:hover {
+    fill: $dark-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

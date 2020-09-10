@@ -10,6 +10,46 @@
   }
 }
 
+.form__group {
+  @media (min-width: $tablet-width) {
+    &--name {
+      order: 1;
+    }
+
+    &--checkbox {
+      order: 4;
+    }
+
+    &--contact {
+      order: 3;
+    }
+
+    &--radio {
+      order: 2;
+    }
+
+    &--textarea {
+      order: 5;
+    }
+
+    &--button {
+      order: 6;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--name {
+      width: 433px;
+    }
+
+    &--radio {
+      width: 431px;
+      position: absolute;
+      left: 637px;
+    }
+  }
+}
+
 .form__fieldset {
   border: 0 none;
 
@@ -123,6 +163,16 @@
   padding-left: 20px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+  position: relative;
+  outline: none;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
 
   &--contact {
     @media (min-width: $tablet-width) {
@@ -133,6 +183,12 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
   }
+}
+
+.form__input--contact::after {
+  content: "";
+  background-image: url("../../img/icon-phone.svg");
+  position: absolute;
 }
 
 .form__legend {
@@ -149,6 +205,11 @@
     @media (min-width: $tablet-width) {
       display: block;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    padding: 0;
   }
 }
 
@@ -192,6 +253,20 @@ textarea::placeholder {
   background-color: $green-btn;
   border: 2px solid $green-btn;
   border-radius: 1px;
+
+  &:hover {
+    background: #1c9b5e;
+    border: 2px solid #1c9b5e;
+    border-radius: 1px;
+  }
+
+  &:active {
+    background: #1c9b5e;
+    border: 2px solid #1c9b5e;
+    border-radius: 1px;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
 }
 
 .form__desc {

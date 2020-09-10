@@ -18,6 +18,14 @@
   vertical-align: middle;
 }
 
+.fieldset-radio__input + label:hover::before {
+  border: 2px solid #283645;
+}
+
+.fieldset-radio__input + label:active::before {
+  border: 2px solid #d22856;
+}
+
 .fieldset-radio__input + label::after {
   content: "";
   position: absolute;
@@ -32,4 +40,9 @@
 
 .fieldset-radio__input:checked + label::after {
   opacity: 1;
+}
+
+.fieldset-radio {
+  padding-top: 66px;
+  padding-bottom: 66px;
 }
