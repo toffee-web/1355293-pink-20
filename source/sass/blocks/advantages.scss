@@ -5,8 +5,13 @@
 }
 
 .advantages {
+  /*position: relative;
+  top: 300px;*/
+  padding-top: 300px;
+
   @media (min-width: $tablet-width) {
     position: relative;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,18 +21,23 @@
 
 .advantages__bg {
   background-color: $light-grey;
+  padding-top: 81px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.0' id='Layer_1' x='0px' y='0px' width='1200px' height='94.074px' viewBox='0 0 1200 94.074' enable-background='new 0 0 1200 94.074' xml:space='preserve'%3E%3Cpolygon fill='%23fff' points='1200,0 0,0 0,94.074 '/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 }
 
 .advantages__list {
   margin: 0;
   padding-left: 0;
-  padding-top: 53px;
+  /*padding-top: 53px;*/
   padding-bottom: 48px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     padding-left: 320px;
     padding-bottom: 17px;
   }
@@ -44,6 +54,10 @@
 .advantages__heading {
   padding-top: 46px;
   padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 19px;
+  }
 
   h2,
   p {
@@ -113,6 +127,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -146,7 +161,7 @@
   background-position: top;
   background-repeat: no-repeat;
   height: 285px;
-  background-color: $light-grey;
+  /*background-color: $light-grey;*/
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
@@ -154,8 +169,9 @@
     background-repeat: no-repeat;
     width: 50%;
     position: absolute;
-    top: 358px;
+    top: 280px;
     height: 482px;
+    background-color: none;
   }
 
   @media (min-width: $desktop-width) {

@@ -12,7 +12,11 @@
   <header class="page-header">
     <div class="page-header__bg container">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="74" height="23">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип" width="74" height="23">
+        </picture>
       </a>
     </div>
     <nav class="main-nav">
@@ -47,22 +51,20 @@
       <div class="page-main__title-background">
         <h1>Фотографии пользователей</h1>
       </div>
-      <div class="page-main__photo photo container">
+      <div class="page-main__photo photo">
         <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
           ваших?
         </p>
-
         <div class="photo__panorama">
-          <img class="photo__panorama-image photo__panorama-image--mobile" src="img/panorama-mobile@1x.jpg"
-            alt="Панорама" width="320" height="137">
-          <img class="photo__panorama-image photo__panorama-image--tablet" src="img/panorama-tablet@1x.jpg"
-            alt="Панорама" width="660" height="509">
-          <img class="photo__panorama-image photo__panorama-image--desktop" src="img/panorama-desktop@1x.jpg"
-            alt="Панорама" width="1200" height="506">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, panorama-tablet@2x.jpg 2x">
+            <img class="photo__panorama-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
+          </picture>
           <div class="photo__subtitle">
             <p>Панорама дня</p>
           </div>
-          <div class="photo__item photo__item--bg">
+          <div class="photo__item photo__item--bg photo__item--wrapper">
             <p class="photo__author-name">Анна
               <span class="photo__time">(5 минут назад)</span></p>
             <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
@@ -71,73 +73,85 @@
           </div>
         </div>
 
+        <div class="container">
         <ul class="photo__list">
-          <!--li class="photo__item-panorama">
-            <img class="photo__panorama-image photo__panorama-image--mobile" src="img/panorama-mobile@1x.jpg" alt="Панорама"
-              width="320" height="137">
-            <img class="photo__panorama-image photo__panorama-image--tablet" src="img/panorama-tablet@1x.jpg" alt="Панорама"
-              width="660" height="509">
-            <img class="photo__panorama-image photo__panorama-image--desktop" src="img/panorama-desktop@1x.jpg"
-              alt="Панорама" width="1200" height="506">
-          </!--li-->
-          <!--li class="photo__item photo__item--bg">
-            <p class="photo__author-name">Анна
-              <span class="photo__time">(5 минут назад)</span></p>
-            <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!</p>
-            <p class="photo__text-like">Нравится: 215</p>
-          </!--li-->
           <li class="photo__item photo__item--bg">
-            <img class="photo__author-image" src="img/photo-car-mobile@1x.jpg" alt="Машина" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, photo-car-tablet@2x.jpg 2x">
+              <img class="photo__author-image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x 2x" alt="Машина">
+            </picture>
             <p class="photo__author-name">Левон
               <span class="photo__time">(5 часов назад)</span></p>
             <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <p class="photo__text-like">Нравится: 356</p>
           </li>
           <li class="photo__item photo__item--bg">
-            <img class="photo__author-image" src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны" width="280"
-              height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, photo-drumset-tablet@2x.jpg 2x">
+              <img class="photo__author-image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x 2x" alt="Барабаны">
+            </picture>
             <p class="photo__author-name">Антон
               <span class="photo__time">(12 часов назад)</span></p>
             <p class="photo__text">Соседи будут рады!</p>
             <p class="photo__text-like">Нравится: 666</p>
           </li>
           <li class="photo__item photo__item--bg">
-            <img class="photo__author-image" src="img/photo-window-mobile@1x.jpg" alt="Окно" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, photo-window-tablet@2x.jpg 2x">
+              <img class="photo__author-image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x 2x" alt="Окно">
+            </picture>
             <p class="photo__author-name">Борис
               <span class="photo__time">(20 часов назад)</span></p>
             <p class="photo__text">Здесь могла быть ваша цитата о вечном.</p>
             <p class="photo__text-like">Нравится: 215</p>
           </li>
           <li class="photo__item photo__item--bg">
-            <img class="photo__author-image" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча" width="280"
-              height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, photo-fair-tablet@2x.jpg 2x">
+              <img class="photo__author-image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x 2x" alt="Кубанская бахча">
+            </picture>
             <p class="photo__author-name">Сергей
               <span class="photo__time">(25 часов назад)</span></p>
             <p class="photo__text">Самая кубанская в мире!</p>
             <p class="photo__text-like">Нравится: 4</p>
           </li>
           <li class="photo__item photo__item--bg">
-            <img class="photo__author-image" src="img/photo-pov-mobile@1x.jpg" alt="Горы" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, photo-pov-tablet@2x.jpg 2x">
+              <img class="photo__author-image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x 2x" alt="Горы">
+            </picture>
             <p class="photo__author-name">Максим
               <span class="photo__time">(40 часов назад)</span></p>
             <p class="photo__text">Где снег-то?</p>
             <p class="photo__text-like">Нравится: 150</p>
           </li>
           <li class="photo__item photo__item--bg">
-            <img class="photo__author-image" src="img/photo-wing-mobile@1x.jpg" alt="Небо" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, photo-wing-tablet@2x.jpg 2x">
+              <img class="photo__author-image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x 2x" alt="Небо">
+            </picture>
             <p class="photo__author-name">Надежда
               <span class="photo__time">(45 часов назад)</span></p>
             <p class="photo__text">Все GM и взаимные лайки!</p>
             <p class="photo__text-like">Нравится: 2590</p>
           </li>
         </ul>
+      </div>
         <p class="page-main__text">Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <div class="page-main__section container">
-        <img class="page-main__img" src="img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования" width="280"
-          height="374">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, photo-road-tablet@2x.jpg 2x">
+          <img class="page-main__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x 2x" alt="Фотография для редактирования">
+        </picture>
         <form class="page-main__form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="page-main__upload">
             <label class="page-main__label">
@@ -153,9 +167,13 @@
               <img src="img/icon-editor-contrast.svg" alt="Контраст" width="32" height="32">
             </label>
           </div>
-          <input class="page-main__range" type="range">
+          <div class="page-main__editor">
+          <input class="page-main__range page-main__range--crop" type="range">
+          <input class="page-main__range page-main__range--fill" type="range">
+          <input class="page-main__range page-main__range--contrast" type="range">
           <button class="page-main__button page-main__button--post" type="submit">Запостить</button>
           <button class="page-main__button page-main__button--cancel" type="reset">Отмена</button>
+        </div>
         </form>
       </div>
     </section>

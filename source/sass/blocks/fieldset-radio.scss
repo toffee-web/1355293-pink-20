@@ -45,4 +45,9 @@
 .fieldset-radio {
   padding-top: 66px;
   padding-bottom: 66px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
 }

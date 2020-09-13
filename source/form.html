@@ -48,10 +48,10 @@
     </div>
     <p class="page-main__text container">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на
       вашу бонусную карту!</p>
-    <form class="form form__group" action="https://echo.htmlacademy.ru" method="POST">
+    <form class="form form__group container" action="https://echo.htmlacademy.ru" method="POST">
       <div class="form__group--name">
         <fieldset class="form__fieldset container">
-          <ul class="form__list">
+          <ul class="form__list  form__list--indent">
             <li class="form__item">
               <label class="form__label" for="surname">Фамилия:</label>
               <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *"
@@ -167,11 +167,13 @@
               <label class="form__label form__label--contact" for="phone">Номер телефона</label>
               <input class="form__input form__input--contact" type="tel" name="tel" id="phone"
                 placeholder="Номер, пожалуйста">
+                <span class="form__icon-bg form__icon-bg--phone"></span>
             </li>
             <li class="form__item form__item--contact">
               <label class="form__label form__label--contact" for="email">Адрес почты</label>
               <input class="form__input form__input--contact" type="email" name="email" id="email"
                 placeholder="Введите почту*" required>
+                <span class="form__icon-bg form__icon-bg--email"></span>
             </li>
           </ul>
         </fieldset>
@@ -199,7 +201,7 @@
         </fieldset>
       </div>
       <div class="form__group--textarea">
-        <fieldset class="form__fieldset form__fieldset--border container">
+        <fieldset class="form__fieldset form__fieldset--border form__fieldset--border-right container">
           <legend class="form__legend" for="emotion">Опишите свои эмоции</legend>
           <textarea class="form__textarea" name="emotion" id="emotion" cols="30" rows="10"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
